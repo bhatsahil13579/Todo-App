@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root{
+/* light theme */
+
+--Very-Light-Gray: hsl(0, 0%, 98%);
+--Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+--Light-Grayish-Blue: hsl(233, 11%, 84%);
+--Dark-Grayish-Blue: hsl(236, 9%, 61%);
+--Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+
+
+
+}
+
+* {
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+.darkTheme{
+
+  --font-family: 'Josefin Sans', sans-serif;
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --Very-Dark-Grayish-Blue-one: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue-two: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue-three: hsl(237, 14%, 26%);
+
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background:url(./images/bg-desktop-light.jpg) no-repeat;
+  background-size: 100% 20rem ; 
+  background-color:var(--Very-Dark-Blue);
+   
+}
+
+.App{
+  
+  width: 37rem;
+  margin-top: 5rem;
+
+  
+  
+}
+
+.header{
+  font-family:var(--font-family) ;
+  color: var(--Very-Light-Gray);
+  height: 2REM;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 0.5rem;
+   
+}
+
+.addForm{
+  margin-top: 3rem;
+  height: 3rem; 
+  position: relative;
+  margin-inline: 0.45rem;
+  
+  
+  
+}
+
+
+
+input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding-left: 3rem;
+  font-size: 18px;
+  font-family: var(--font-family);
+  border-radius: 3px;
+  font-weight: 700;
+  color: var(--Very-Dark-Grayish-Blue) ;
+  
+ 
+  
+}
+
+
+.buttonContainer{
+  position: absolute;
+  width: 2.18rem;
+  height: 2.18rem;
+  border-radius: 50%;
+  left: 4px;
+  top: 7px;
+  bottom: 0;
+  background-color:var(--Light-Grayish-Blue);
+ 
+
+}
+
+
+
+
+.buttonContainer:hover{
+  background: linear-gradient(to bottom, purple, skyblue);
+}
+
+.inputButton{
+   position: absolute;
+   left: 1.3px;
+   right: 2px;
+   top: 1.5px;
+   bottom: 0px;
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   
+}
+
+
+.taskList{
+  position: relative;
+  font-family: var(--font-family);
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 600;
+  background-color: var(--Very-Light-Gray);
+  min-height: 3.5rem;
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+  list-style: none;
+  padding: 0.5rem 0rem 0.5rem 3.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.6;
+
+  
+}
+
+.taskList:first-child{
+  margin-top: 2rem;
+  border-radius: 5px 5px 0 0;
+}
+
+
+.taskContainer{
+  
+  margin: 0.5rem;
+  margin-bottom: 0;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+   
+
+}
+
+
+.outerContainer{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+ margin-top: 1rem;
+  
+  
+  
+  
+}
+
+.TaskManagerContainer{
+   list-style: none;
+   height: 3.2rem;
+   width: 97.3%;
+   display: flex;
+   align-items: center;
+   font-family: var(--font-family);
+   color: var(--Very-Dark-Grayish-Blue);
+   font-weight: 700;
+   background-color:var(--Very-Light-Gray);
+   justify-content: space-evenly;
+   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+   border-radius: 0 0 5px 5px ;
+   
+   
+
+}
+
+.itemCounter{
+  
+  margin-right: 5px;
+
+}
+
+.itemsLeft{
+  font-weight: 400;
+  color:hsl(234, 11%, 52%);
+ 
+}
+
+.taskState{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 0.7rem;
+  width: 48%;
+  cursor: pointer;
+
+}
+
+
+.clearCompleted{
+  list-style: none;
+  cursor: pointer;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.clearCompleted:focus{
+  color:royalblue;
+}
+
+.switch{
+  padding-bottom: 2px;
+}
+.switch:hover{
+   color:var( --Light-Grayish-Blue-hover);
+}
+
+.deleteIcon{
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  
+}
+
+
+.mobileTaskState{
+  display: none;
+}
+
+
+
+@media screen and (max-width:600px) {
+ .taskState{
+  display: none;
+ } 
+
+ .clearCompletedContainer{
+ 
+  width: 50%;
+  display: grid;
+  justify-content: end;
+  margin-right: 0.5rem;
+ }
+ .itemsLeft{
+  width: 50%;
+  margin-left: 1rem;
+ }
+ .mobileTaskState{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  height: 3.2rem;
+   width: 97.3%;
+   margin-top: 1REM;
+  font-family: var(--font-family);
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+  background-color:var(--Very-Light-Gray);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+   border-radius: 0 0 5px 5px ;
+ }
+
+ .mobileCounter{
+  cursor: pointer;
+ }
+}
+
+
+
+
+
+
+
