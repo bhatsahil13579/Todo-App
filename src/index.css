@@ -10,8 +10,22 @@
 --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
 
 
+--font-family:'Josefin Sans', sans-serif;
 
 
+
+
+}
+
+
+.darktheme{
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+--Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+--Light-Grayish-Blue: hsl(234, 39%, 85%);
+--Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+--Very-Dark-Grayish-Blue-one: hsl(234, 11%, 52%);
+--Very-Dark-Grayish-Blue-two: hsl(233, 14%, 35%);
+--Very-Dark-Grayish-Blue-three: hsl(237, 14%, 26%);
 }
 
 * {
@@ -20,18 +34,7 @@
   box-sizing: border-box;
 }
 
-.darkTheme{
 
-  --font-family: 'Josefin Sans', sans-serif;
-  --Very-Dark-Blue: hsl(235, 21%, 11%);
-  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
-  --Light-Grayish-Blue: hsl(234, 39%, 85%);
-  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
-  --Very-Dark-Grayish-Blue-one: hsl(234, 11%, 52%);
-  --Very-Dark-Grayish-Blue-two: hsl(233, 14%, 35%);
-  --Very-Dark-Grayish-Blue-three: hsl(237, 14%, 26%);
-
-}
 
 #root{
   height: 100%;
@@ -90,7 +93,7 @@ input{
   border: none;
   padding-left: 3rem;
   font-size: 18px;
-  font-family: var(--font-family);
+  font-family:var(--font-family);
   border-radius: 3px;
   font-weight: 700;
   color: var(--Very-Dark-Grayish-Blue) ;
